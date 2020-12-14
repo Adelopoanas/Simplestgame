@@ -10,6 +10,14 @@ function jump() {
 }
 
 var checkDead = setInterval(function() {
-    var character = 
+    var characterTop = 
     parseInt(window.getComputedStyle(character).getPropertyValue('top'));
+    var blockLeft = 
+    parseInt(window.getComputedStyle(block).getPropertyValue('left'));
+
+    if (blockLeft<20 && blockLeft>0 || charcterTop>=130) {
+        block.style.animation = "none";
+        block.style.display = "none";
+        alert('You lose!!');
+    }
 },10);
