@@ -19,7 +19,7 @@
 }
 
 .animate{
-    animation: jump 500ms ;
+    animation: jump 500ms;
 }
 
 @keyframes jump{
