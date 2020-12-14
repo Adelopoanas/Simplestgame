@@ -8,3 +8,7 @@ function jump() {
         character.classList.remove('animate');
     },500);
 }
+var checkDead = setInterval(function () {
+    var character = 
+    parseInt(window.getComputedStyle(character).getPropertyValue('top'));
+},10);
